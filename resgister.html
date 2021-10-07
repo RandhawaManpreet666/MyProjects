@@ -13,19 +13,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
     </script>
     <link rel="stylesheet" href="style.css">
-
     <script>
-        $(function () {
+         $(function() {
+            $(function () {
             $("#datepicker").datepicker();
+        });         
+//    $('#datepicker').datepicker( {
+//             changeMonth: true,
+//             changeYear: true,
+//             changeDay: true,
+//             showButtonPanel: true,
+//             dateFormat: 'DD MM yy',
+//             onClose: function(dateText, inst) { 
+//                 $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+//             }
+//             });
+
+            $('#divi').hide(); 
         });
     </script>
 </head>
-
 <body style=" background-image: repeating-linear-gradient(skyblue, white 100%);">
    <h1 style="margin-left:30%;">Registration Form</h1>
     <div class="container">
         <form>
-
             <div class="input-block inner-addon left-addon">
                 <i class="glyphicon glyphicon-user"></i>
                 <input type="text" name="input-text" id="input-text" required>
@@ -40,26 +51,25 @@
                     Last Name
                 </span>
             </div>
-
-            <label>Select Gender :</label>
+            <label class="l">Select Gender :</label>
             <div class="radiobutton">
-                <input type="radio" id="radioF" name="radiobtn" value="Female" checked>
+                <input type="radio" id="radioF" name="radiobtn" value="Female" >
                 <label for="radioF">F</label>
-
-                <input type="radio" id="radioM" name="radiobtn" value="Male">
+                <input type="radio" id="radioM" name="radiobtn" value="Male" checked>
                 <label for="radioM">M</label>
+            <div id="divi">
+                <input type="radio" id="" name="radio" value="">
+                <label for=""></label> </div>
             </div>
-
             <div class="input-block inner-addon left-addon dateBox">
                 <i class="glyphicon glyphicon-calendar"></i>
                 <input type="text" name="input-text" id="datepicker" required>
                 <span class="placeholder">
-                    Date
+                    Date of Birth
                 </span>
             </div>
             <button class=btn type="submit">Register</button>
         </form>
     </div>
 </body>
-
 </html>
