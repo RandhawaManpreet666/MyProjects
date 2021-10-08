@@ -44,6 +44,9 @@ input[type=text] {
     border: rgb(14, 66, 82);
     background: rgb(14, 66, 82);
 }
+.ui-datepicker .ui-datepicker-title select{
+    color:rgb(14, 66, 82);
+}
 .inner-addon { 
     position: relative; 
 }
@@ -56,6 +59,7 @@ input[type=text] {
 .right-addon .glyphicon { right: 0px;}
 .left-addon input  { padding-left:  30px; }
 .right-addon input { padding-right: 30px; }
+
 div.input-block {
     position: relative;
   }
@@ -104,9 +108,12 @@ div.input-block {
     margin-top: -30px;
     margin-left: 100px;
   }
+  
   .radiobutton input[type="radio"] {
     opacity: 0;
+
   }
+
   .radiobutton label {
     display: inline-block;
     background-color: #ddd;
