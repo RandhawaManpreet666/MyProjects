@@ -45,7 +45,9 @@ input[type=text] {
     background: rgb(14, 66, 82);
 }
 .ui-datepicker .ui-datepicker-title select{
-    color:rgb(14, 66, 82);
+    color:white;
+    background-color: rgb(14, 66, 82);
+    border:none;
 }
 .inner-addon { 
     position: relative; 
